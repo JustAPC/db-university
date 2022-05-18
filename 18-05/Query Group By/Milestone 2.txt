@@ -1,0 +1,3 @@
+2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+SELECT COUNT(*) AS `numero_insegnanti`, `office_number` AS `numero_ufficio` FROM `teachers` GROUP BY `office_number`;
