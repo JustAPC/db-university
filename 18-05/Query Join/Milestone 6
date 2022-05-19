@@ -9,4 +9,4 @@ RIGHT JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
 RIGHT JOIN `degrees` ON `courses`.`degree_id` = `degrees`.`id`
 JOIN `departments` on `degrees`.`department_id` = `departments`.`id`
 WHERE `departments`.`id` = 5
-GROUP BY `teachers`.`name`
+GROUP BY `teachers`.`id`
